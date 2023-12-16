@@ -1,0 +1,12 @@
+[Unit]
+Description=undervolt
+After=suspend.target hibernate.target hybrid-sleep.target
+
+[Service]
+Type=simple
+ExecStart=/etc/systemd/system/undervolt.sh
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target suspend.target hibernate.target hybrid-sleep.target
