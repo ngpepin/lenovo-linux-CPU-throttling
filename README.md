@@ -1,0 +1,1 @@
+# lenovo-linux-CPU-throttling
