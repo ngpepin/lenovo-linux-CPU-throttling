@@ -246,11 +246,11 @@ while true; do
         log_message "    ====  Settings CORRECT (max temp = ${current_temp}C)" 
 	log_message "          No action required"
         SLEEP_TIME=1
+	
+        # Log the time since the last correct setting
+        log_time_since_last_correct_setting
     fi
     
-    # Log the time since the last correct setting
-    log_time_since_last_correct_setting
-      
     # keep the size of the log file in check
     trim_log_file
     
